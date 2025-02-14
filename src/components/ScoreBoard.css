@@ -1,0 +1,56 @@
+/* Scoreboard with dark theme */
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #1a1a1a; /* Darker background for better contrast */
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); /* Slightly deeper shadow */
+  color: #e0e0e0; /* Light grey text */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Score container */
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Score styling */
+.score {
+  font-size: 2rem;
+  color: #ffffff; /* White text */
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* Score labels (Player and Computer) */
+.score-label {
+  font-size: 1.3rem;
+  color: #b0b0b0; /* Slightly lighter grey */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .scoreboard {
+      flex-direction: column;
+      padding: 15px;
+      margin-bottom: 20px;
+  }
+
+  .score {
+      font-size: 1.6rem;
+  }
+
+  .score-label {
+      font-size: 1.1rem;
+  }
+}

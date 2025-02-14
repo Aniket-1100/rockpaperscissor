@@ -1,0 +1,52 @@
+/* Choice button with dark theme */
+.choice-button {
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: #2c2c2c; /* Darker background for better contrast */
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hover effect for choice button */
+.choice-button:hover {
+  background: #3a3a3a; /* Slightly lighter background */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Active state for choice button */
+.choice-button:active {
+  background: #484848;
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Focus state for accessibility */
+.choice-button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* Disable button state */
+.choice-button:disabled {
+  background: #1a1a1a;
+  color: #777;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .choice-button {
+      font-size: 1.1rem;
+      padding: 12px 25px;
+  }
+}

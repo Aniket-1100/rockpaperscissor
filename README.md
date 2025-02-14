@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+Rock, Paper, Scissors Game:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web-based Rock, Paper, Scissors game built using React.js. The game allows a user to play against the computer in a fun, interactive manner. The computer’s choices are randomly generated, and the game logic follows the standard rules of Rock, Paper, Scissors.
 
-## Available Scripts
+Features: 
 
-In the project directory, you can run:
+Single-Player Mode: Play against the computer with random selections.
+Interactive User Interface: Built with React to provide an engaging, responsive experience.
+Game Logic: Standard rules—Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.
+Score Tracking: Tracks the number of wins, losses, and draws.
 
-### `npm start`
+Technologies Used:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React.js: Used to build the frontend and manage game state.
+JavaScript: Implemented the game logic, including randomization of the computer's choice and tracking the score.
+CSS: For styling the game and making it responsive.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Available Scripts:
 
-### `npm test`
+In the project directory, you can run the following commands:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm start
+Runs the app in development mode.
+Open http://localhost:3000 to view the game in your browser.
 
-### `npm run build`
+The page will reload automatically when you make changes.
+Any lint errors will be displayed in the console.
+npm test
+Launches the test runner in interactive watch mode.
+Check out the React documentation on testing for more information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm run build
+Builds the app for production to the build folder.
+Optimizes the app for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The build is minified and includes hashes in filenames.
+The app is ready for deployment.
+For more details, check out the deployment guide.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm run eject
+Note: This is a one-way operation. Once you eject, you can't go back!
 
-### `npm run eject`
+If you want full control over configuration files like Babel, Webpack, ESLint, etc., you can eject.
+This is recommended only for advanced users.
+Cloning and Running the Project Locally
+Follow these steps to clone this project and run it locally using Visual Studio Code:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository
+Open Visual Studio Code.
+Open a terminal in VS Code by navigating to View > Terminal.
+In the terminal, run the following command to clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash: git clone https://github.com/your-username/rock-paper-scissors.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Replace your-username with your GitHub username or the repository URL if it's hosted elsewhere.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Navigate to the project folder
+After cloning the repository, change into the project directory:
 
-## Learn More
+bash: cd rock-paper-scissors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install dependencies
+Before running the app, you'll need to install the required dependencies. In the terminal, run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash: npm install
 
-### Code Splitting
+This will download and install all necessary dependencies listed in the package.json file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Run the development server
+Once the dependencies are installed, start the development server by running:
 
-### Analyzing the Bundle Size
+bash: npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This will open the game in your browser at http://localhost:3000. The page will reload automatically as you make changes.
 
-### Making a Progressive Web App
+5. Edit and develop the game
+You can now edit the game logic and UI as needed. Visual Studio Code will provide code suggestions, linting, and error checking to help you during development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Folder Structure
+src/: Contains the source code for the application.
+App.js: The main component that holds the game logic and state.
+components/: Folder containing React components for the user interface.
+ChoiceButton.js: Represents each choice button (Rock, Paper, Scissors).
+GameResult.js: Displays the result of each round (win, lose, draw).
+Scoreboard.js: Displays the current score.
+styles/: Folder containing CSS files for styling the game.
 
-### Advanced Configuration
+Game Logic
+The game logic is simple:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The user chooses either Rock, Paper, or Scissors.
+The computer randomly selects one of these options.
+The game compares the user’s choice with the computer’s choice and determines the outcome (win, lose, or draw).
+The score is updated based on the result.
+How to Play
+Select your choice (Rock, Paper, or Scissors) by clicking one of the buttons.
+The computer will automatically choose its move, and the result will be displayed.
+The score will update after each round.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Visit: https://rockpaperscissor-swf.pages.dev/
